@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test">
+    <test name="Test 1">
+        <parameter name="username" value="student"></parameter>
+        <parameter name="password" value="12345"></parameter>
+        <classes>
+            <class name="sda.HomeWorks.day16.Hw3"></class>
+        </classes>
+    </test>
+    <test name="Test 2">
+        <parameter name="username" value="anything"></parameter>
+        <parameter name="password" value="Password123"></parameter>
+        <classes>
+            <class name="sda.HomeWorks.day16.Hw3"></class>
+        </classes>
+    </test>
+    <test name="Test 3">
+        <parameter name="username" value="anything"></parameter>
+        <parameter name="password" value="123"></parameter>
+        <classes>
+            <class name="sda.HomeWorks.day16.Hw3"></class>
+        </classes>
+    </test>
+    <test name="Test 4">
+        <parameter name="username" value=""></parameter>
+        <parameter name="password" value="Password123"></parameter>
+        <classes>
+            <class name="sda.HomeWorks.day16.Hw3"></class>
+        </classes>
+    </test>
+</suite>

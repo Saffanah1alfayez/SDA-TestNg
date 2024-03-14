@@ -71,6 +71,7 @@ Verify button Log out is displayed on the new page.
         WebElement sub = driver.findElement(By.id("submit"));
         sub.click();
 
+
         SoftAssert sa = new SoftAssert();
 
         //Verify new page URL contains practicetestautomation.com/logged-in-successfully/
