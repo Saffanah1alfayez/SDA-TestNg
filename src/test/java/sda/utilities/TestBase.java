@@ -22,7 +22,7 @@ public class TestBase {
 
     @BeforeMethod
     public void setUp() {
-        driver=new ChromeDriver();
+        driver = new ChromeDriver();
         //driver = new FirefoxDriver
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -31,11 +31,12 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//            driver = null;
+        //if (driver != null) {
+            //driver.quit();
+            //driver = null;
         }
 
 
     }
+
 
