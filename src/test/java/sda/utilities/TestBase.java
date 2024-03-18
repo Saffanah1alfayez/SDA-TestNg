@@ -2,6 +2,7 @@ package sda.utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -18,7 +19,7 @@ public class TestBase {
     We will use TestBase Class only by inheriting it with the extends keyword.
     Therefore, we choose the protected access modifier for the driver variable we created.
      */
-    protected static WebDriver driver;
+    public static WebDriver driver;
 
     @BeforeMethod
     public void setUp() {
@@ -31,12 +32,11 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() {
-        //if (driver != null) {
-            //driver.quit();
-            //driver = null;
-        }
+          if (driver != null) {
+            driver.quit();
+            driver = null; }
 
-
+    }
     }
 
 

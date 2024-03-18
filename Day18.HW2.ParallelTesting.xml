@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All TestS" thread-count="3" parallel="classes">
+
+    <test name="Test01">
+        <classes>
+            <class name="sda.tests.day15.C04DependsOnMethods"></class>
+        </classes>
+    </test>
+
+    <test name="Test02">
+        <classes>
+            <class name="sda.HomeWorks.day15.Hw1"></class>
+        </classes>
+    </test>
+
+    <test name="Test03">
+        <classes>
+            <class name="sda.HomeWorks.day15.Hw3"></class>
+        </classes>
+    </test>
+</suite>
